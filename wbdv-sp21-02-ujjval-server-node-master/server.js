@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://ujjval:ujjval@cluster0.zwdxz.mongodb.net/whiteboard?retryWrites=true&w=majority&ssl=true',
+mongoose.connect('******',
 {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(function (req, res, next) {
