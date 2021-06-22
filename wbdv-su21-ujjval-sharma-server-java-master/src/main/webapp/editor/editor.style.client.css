@@ -1,0 +1,62 @@
+   .same-line-list-item{
+    display:inline;
+    margin-left: 10px
+}
+ .same-line-item{
+    display:inline
+}
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.module-remove-icon{
+    float: right;font-size:20px;color:#df4759
+}
+.material-switch > label {
+    height: 0px;
+    position: relative; 
+    width: 50px;  
+}
+/* toggle switch is inspired from https://gist.github.com/Alexiy1984/f13ba8cca5dfdcf6b474ae2df4078334*/
+.material-switch > label::before {
+    background-color:#0275d8;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: ' ';
+      margin-top: -9px;
+    transition: all 0.2s ease-in-out;
+    width: 45px;
+        height: 18px;
+    position:absolute;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 17px;
+    margin-top: -8px;
+    position: absolute;
+    top: -3px;
+        content: ' ';
+    height: 23px;
+    left: -4px;
+    transition: all 0.2s ease-in-out;
+    width: 23px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .save-preview-box- { /*this is for small screen*/
+        float: left;
+    }
+
+}
+
+  @media only screen and (min-width:800px){
+/*this is for large screen*/
+    .save-preview-box { float: right; }
+
+  }

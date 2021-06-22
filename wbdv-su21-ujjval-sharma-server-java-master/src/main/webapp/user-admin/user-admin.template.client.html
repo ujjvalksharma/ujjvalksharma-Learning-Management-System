@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="../services/user.service.client.js" type="text/javascript" ></script>
+  <link rel="stylesheet" href="user-admin.style.client.css">
+</head>
+<body>
+  <h2>Admin Portal</h2>    
+  <table class="table">
+
+    <thead>
+      <tr>
+          <th>Username</th>
+          <th>Password</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Role</th>
+          <th>&nbsp</th>
+      </tr>
+
+      <tr>  
+        <td><input type="text" class="webdev-username-txtbx form-control" name="username-txtbx" ></td>
+             <td>  <input type="password" class="webdev-password-txtbx form-control" name="password-txtbx" ></td>
+              <td><input type="text" class="webdev-first-name-txtbx form-control" name="first-name-txtbx" ></td>
+              <td><input type="text" class="webdev-last-name-txtbx form-control" name="last-name-txtbx"></td>
+                  <td>
+                    <select class="form-control" class="webdev-role-selbx" id="webdev-role-selbx">
+                    <option value="Student">Student</option> 
+                    <option value="Faculty">Faculty</option>
+                    <option value="Admin">Admin</option>
+                    </select>
+                  </td>
+                  <td>
+                  <button class="transparent webdev-search-person-btn" > <i class="fa fa-search" aria-hidden="true"></i>    </button> 
+                  <button class="transparent webdev-add-person-btn" id='webdev-add-person-btn' >   <i class="fa fa-plus" aria-hidden="true"></i></button>
+                  <button class="transparent webdev-update-person-btn" >     <i class="fa fa-check" aria-hidden="true"></i></button>
+                  </td> 
+           
+                </tr>
+                
+    </thead>
+
+
+    
+
+    <tbody class="webdev-person-row-parent">
+                <tr class="webdev-person-row display-off">
+                  <td class='webdev-person-username'></td>
+                    <td class='webdev-person-password'>********</td>
+                  <td class='webdev-person-first-name'></td>
+                     <td class='webdev-person-last-name'></td>
+                         <td class='webdev-person-role'></td>
+                         <td>
+                      <button class="transparent webdev-person-delete-btn" type='button'>      <i class="fa fa-times" aria-hidden="true"></i></button>
+                    <button class="transparent   webdev-person-update-btn">        <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                         </td>
+               </tr>
+    
+    </div>
+  
+    </tbody>
+  </table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="user-admin.controller.client.js"></script>
+</html>
+

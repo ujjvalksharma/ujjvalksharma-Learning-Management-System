@@ -1,0 +1,28 @@
+ 
+.course-title-input{
+   border: 1px solid #ccc;
+   margin-top: 5px;
+   border-radius: 4px;
+   padding: 12px 20px;
+}
+
+  .icon-size-medium{
+  	font-size:20px;
+  }
+
+  .course-remove-icon-small-screen{
+font-size:20px;
+float: right;
+  }
+
+  .bookicon-title{
+  	margin-right: 10px;
+  }
+
+  .vertical-align-course{
+  	margin-top: -20px;
+  }
+
+  .same-line{
+    display: inline;
+  }

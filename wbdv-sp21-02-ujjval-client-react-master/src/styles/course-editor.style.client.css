@@ -1,0 +1,37 @@
+.webdev-border-list{
+    border:1px solid #DCDCDC;
+  }
+  
+  .webdev-theme-black{
+      color: 	#292b2c
+  }
+  
+  .webdev-theme-white{
+      color: 	#f7f7f7
+  }
+  
+  .webdev-theme-blue{
+      color: 	#0275d8
+  }
+  
+  .webdev-theme-background-blue{
+      background-color: #0275d8
+  }
+
+
+
+.webdev-theme-red {
+    color:  #d9534f
+  }
+
+  .webdev-theme-green {
+    color:  #5cb85c
+  }
+
+  .webdev-theme-background-red {
+    background-color:  #d9534f
+  }
+
+  .webdev-theme-background-green {
+    background-color:  #5cb85c
+  }

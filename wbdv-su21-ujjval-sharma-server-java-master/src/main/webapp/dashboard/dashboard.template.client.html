@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>WebDev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dashboard.style.client.css" type="text/css">  
+        <link rel="stylesheet" href="../style.css">  
+        <style type="text/css">
+         @media only screen and (max-width: 800px) {
+    .small-screen-display-off {
+        display: none;
+    }
+
+       .course-title-input {
+       width: 200px;
+       height: 35px
+}
+
+}
+
+  @media only screen and (min-width:800px){
+
+    .big-screen-display-off { 
+      display: none;
+       }
+
+          .course-title-input {
+         width: 600px;
+         height: 35px
+   }
+
+  }
+  a { 
+    color: inherit;
+     } 
+        </style>
+</head>
+<body >
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+
+     <h4 class=" same-line small-screen-display-off grey-theme" style="margin-left: 10px"> 
+      <i class="fa fa-bars" style="margin-right: 10px"></i> Course Manager</h4>
+
+       <h4  style="margin-left: 10px;margin-right: 10px" class="same-line  big-screen-display-off grey-theme"> <i class="fa fa-bars"></i></h4>
+
+<form class="same-line" style="margin-left: 10px">
+
+       <input type="text" class="course-title-input grey-theme" placeholder="New course title" name="search" />
+
+      <button class="btn btn-primary round-button" type="submit" style="margin-left: 10px">
+            <span class="glyphicon glyphicon-plus"></span>
+          </button>
+
+</form>
+    </div>
+    
+  </div>
+</nav>
+ 
+
+
+  <div class="panel panel-default" style="margin-top: -20px">
+    <div class="panel-heading small-screen-display-off">
+      
+<div class="row">
+<div class="col-sm-6"><b>Title</b></div>
+  <div class="col-sm-6">
+
+<div class="row">
+
+  <div class="col-sm-3"><b>Owned By </b><span class="fa fa-caret-down blue-theme"></span></div>    
+      <div class="col-sm-3"><b>Last modified by me </b></div>
+          <div class="col-sm-3"> <span class="fa fa-th blue-theme icon-size-medium"></span></div>   
+              <div class="col-sm-3"><span class="fa fa-sort-alpha-asc blue-theme icon-size-medium"></span></div>
+
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+  
+
+    <div class="panel-body">
+<div class='big-screen-display-off' id='today=heading'>
+         <h3><u> Today</u></h3>
+         <br />
+</div>
+
+<div id="today_course" style="margin-top: -15px">
+ <div class="panel panel-default">
+    <div class="panel-body">
+<div class="row">
+  
+    <div class="col-sm-6">   
+    <p><span class="fa fa-book blue-theme bookicon-title" ></span> <b> <a href="../editor/editor.template.client.html">CS5500 Software Engineering Graduate</a></b>
+     <span class="fa fa-times big-screen-display-off red-theme  course-remove-icon-small-screen"></span></p></div> 
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3 "> me </div>
+                <div class="col-sm-3"> 6:45 PM</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3 "><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+ <div class="panel panel-default vertical-align-course" >
+    <div class="panel-body">
+<div class="row">
+  <div class="col-sm-6"><p><span class="fa fa-book blue-theme bookicon-title" ></span> <b><a href="../editor/editor.template.client.html">CS5500 Software Engineering Undergraduate</a></b>
+    <span class="fa fa-times big-screen-display-off red-theme course-remove-icon-small-screen"></span></p></div>
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> 6:40 PM</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+  <div class="panel panel-default vertical-align-course">
+    <div class="panel-body">
+<div class="row">
+   <div class="col-sm-6"><p><span class="fa fa-book blue-theme bookicon-title" ></span><b><a href="../editor/editor.template.client.html">CS4500 WebDev Undergraduate</a></b>
+     <span class="fa fa-times big-screen-display-off red-theme icon-size-medium" style="float: right"></span></p></div>
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> 6:45 PM</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+    <div class="panel panel-default vertical-align-course">
+    <div class="panel-body">
+<div class="row">
+    <div class="col-sm-6"><p><span class="fa fa-book blue-theme bookicon-title" ></span> <b><a href="../editor/editor.template.client.html">CS4500 WebDev Graduate</a></b>
+      <span class="fa fa-times big-screen-display-off red-theme icon-size-medium" style="float: right"></span></p></div>
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> 6:45 PM</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+ <div class="panel panel-default vertical-align-course">
+    <div class="panel-body">
+<div class="row">
+   <div class="col-sm-6"><p><span class="fa fa-book blue-theme bookicon-title" ></span> <b><a href="../editor/editor.template.client.html">CS5200 Intro to Databases</a></b>
+     <span class="fa fa-times big-screen-display-off icon-size-medium red-theme" style="float: right"></span></p></div> 
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> 6:44 PM</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><span class="fa fa-times icon-size-medium red-theme"></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+</div>
+
+   <h3><u> Yesterday</u></h3>
+
+<br />
+
+<div id="yesterday_course">
+ <div class="panel panel-default vertical-align-course">
+    <div class="panel-body">
+<div class="row">
+ <div class="col-sm-6"><p><span class="fa fa-book blue-theme bookicon-title" ></span> <b><a href="../editor/editor.template.client.html">WEBDEV 2 - REACT</a></b>
+    <span class="fa fa-times big-screen-display-off icon-size-medium red-theme" style="float: right"></span>
+  <span class="fa fa-users small-screen-display-off blue-theme" aria-hidden="true" style="margin-left: 10px"></span> </p></div> 
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> 6:30 pm</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<h3><u> Previous 7 days</u></h3>
+
+<br />
+<div id="previous_seven_days_course">
+ <div class="panel panel-default vertical-align-course">
+    <div class="panel-body">
+<div class="row">
+    <div class="col-sm-6"><p><span class="fa fa-book blue-theme" style="margin-right: 10px"></span> <b><a href="../editor/editor.template.client.html">WEBDEV Syllabus</a></b>
+        <span class="fa fa-times big-screen-display-off icon-size-medium red-theme" style="float: right"></span>
+   <span class="fa fa-users small-screen-display-off blue-theme" aria-hidden="true" style="margin-left: 10px"></span></p></div> 
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> May 3,2018</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3 "><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+ <div class="panel panel-default vertical-align-course">
+    <div class="panel-body" >
+<div class="row">
+ <div class="col-sm-6"><p><span class="fa fa-book blue-theme" style="margin-right: 10px"></span> <b><a href="../editor/editor.template.client.html">WEBDEV 1- JavaScript, Java, SQL</a></b>
+    <span class="fa fa-times big-screen-display-off icon-size-medium red-theme" style="float: right"></span>
+    <span class="fa-stack small-screen-display-off blue-theme" style="margin-left: 10px">
+    <!-- The icon that will wrap the number -->
+    <span class="fa fa-circle-o fa-stack-2x"></span>
+    <!-- a strong element with the custom content, in this case a number -->
+    <strong class="fa-stack-1x">
+        8    
+    </strong>
+</span>
+<span class="fa fa-users small-screen-display-off blue-theme" aria-hidden="true" style="margin-left: 10px"></span>
+   </p></div> 
+      <div class="col-sm-6 small-screen-display-off">
+        <div class="row">
+            <div class="col-sm-3"> me </div>
+                <div class="col-sm-3"> 6:30 pm</div>
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-3"><span class="fa fa-times icon-size-medium red-theme" ></span></div>
+        </div>
+
+
+      </div>
+</div>
+
+
+    </div>
+  </div>
+
+</div>
+<div id="add_course_from_bottom">
+  <button class="btn btn-primary round-button" type="submit" style=" float: right;height:70px;width:70px">
+            <i class="glyphicon glyphicon-plus"></i>
+          </button>
+        </div>
+  </div>
+
+
+
+</body>
+</html>
